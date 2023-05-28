@@ -1,6 +1,6 @@
 <script>
 import { defineComponent } from 'vue';
-import logo from '@/assets/images/logo.svg';
+import logo from '../assets/icon2.png';
 
 export default defineComponent({
   name: 'ProductList',
@@ -68,7 +68,7 @@ export default defineComponent({
 
 .product {
   display: flex;
-  padding: 15px 10px;
+  padding: 11px 10px;
   height: 92px;
   width: 246px;
   border-bottom: 2px dotted #979695;

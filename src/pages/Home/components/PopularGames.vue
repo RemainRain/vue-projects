@@ -1,10 +1,10 @@
 <script>
 import { defineComponent } from 'vue';
 import MyTitle from '@/components/MyTitle.vue';
-import coverImg from '../assets/cover.png';
+import coverImg from '../assets/cover2.png';
 
 export default defineComponent({
-  name: 'RecommendGame',
+  name: 'PopularGames',
   components: { MyTitle },
   data () {
     return {
@@ -65,7 +65,7 @@ export default defineComponent({
 
 <template>
   <div class="container">
-    <MyTitle>推荐游戏</MyTitle>
+    <MyTitle>热门游戏</MyTitle>
     <div class="content">
       <div class="game" v-for="(game,index) in gameList" :key="index">
         <div class="cover">
@@ -95,7 +95,7 @@ export default defineComponent({
 
   .game {
     width: 240px;
-    height: 321px;
+    //height: 227px;
     display: inline-block;
     //margin-right: 5px;
     margin-bottom: 22px;

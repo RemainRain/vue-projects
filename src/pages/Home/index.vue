@@ -4,10 +4,22 @@ import LoginForm from '@/pages/Home/components/LoginForm.vue';
 import ProductList from '@/pages/Home/components/ProductList.vue';
 import ServiceList from '@/pages/Home/components/ServiceList.vue';
 import RecommendGame from '@/pages/Home/components/RecommendGame.vue';
-
+import PopularGifts from '@/pages/Home/components/PopularGifts.vue';
+import PopularGames from '@/pages/Home/components/PopularGames.vue';
+import ServiceChannels from '@/pages/Home/components/ServiceChannels.vue';
+import RecommendNewGames from '@/pages/Home/components/RecommendNewGames.vue';
 export default defineComponent({
   name: 'index',
-  components: { LoginForm, ProductList, ServiceList, RecommendGame }
+  components: {
+    LoginForm,
+    ProductList,
+    ServiceList,
+    RecommendGame,
+    PopularGifts,
+    PopularGames,
+    ServiceChannels,
+    RecommendNewGames
+  }
 });
 </script>
 
@@ -31,6 +43,22 @@ export default defineComponent({
           <RecommendGame/>
         </div>
       </div>
+      <div class="layout_3-10">
+        <div class="left">
+          <PopularGifts/>
+        </div>
+        <div class="right">
+          <PopularGames/>
+        </div>
+      </div>
+      <div class="layout_3-10">
+        <div class="left">
+          <ServiceChannels/>
+        </div>
+        <div class="right">
+          <RecommendNewGames/>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -39,7 +67,7 @@ export default defineComponent({
 
 .bg {
   height: 460px;
-  width: 100vw;
+  width: 100%;
   position: absolute;
   top: 76px;
   //top: 0;
@@ -76,6 +104,10 @@ export default defineComponent({
   .contents {
     padding-top: 460px;
 
+  }
+
+  .layout_3-10:last-of-type {
+    margin-bottom: 137px;
   }
 }
 </style>

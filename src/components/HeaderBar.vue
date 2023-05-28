@@ -54,7 +54,7 @@ export default defineComponent({
 </script>
 
 <template>
-  <div class="bar">
+  <div id="bar">
     <div class="tabs">
       <div class="left">
         <img class="logo" src="../assets/images/logo.png">
@@ -86,18 +86,18 @@ export default defineComponent({
 </template>
 
 <style lang="scss" scoped>
-.bar {
+#bar {
   background: #fff;
   height: 76px;
   display: flex;
   align-items: center;
   position: fixed;
-  width: 100vw;
+  width: 100%;
   z-index: 999;
 }
 
 .tabs {
-  max-width: 1360px;
+  width: 1360px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;

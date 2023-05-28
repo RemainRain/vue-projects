@@ -3,14 +3,14 @@ import { defineComponent } from 'vue';
 
 export default defineComponent({
   name: 'index',
-  components: { }
+  components: {}
 });
 </script>
 
 <template>
-<div class="page">
-
-</div>
+  <div class="page">
+    TODO
+  </div>
 </template>
 
 <style lang="scss" scoped>
