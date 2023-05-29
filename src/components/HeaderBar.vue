@@ -12,6 +12,10 @@ export default defineComponent({
           path: '/'
         },
         {
+          name: '游戏中心',
+          path: '/game-center'
+        },
+        {
           name: '用户中心',
           path: '/user-center'
         },
@@ -38,19 +42,24 @@ export default defineComponent({
       }
     };
   },
-  created () {
-    const path = this.$route.path;
-    console.log(path);
-    this.currentPath = path;
+  // 监听页面路由变化
+  watch: {
+    $route () {
+      // console.log(this.$route);
+      this.currentPath = this.$route.path;
+      console.log(this.currentPath);
+    }
   },
   methods: {
     // 跳转
     toPage (path) {
       this.currentPath = path;
+      console.log(this.currentPath);
       this.$router.push(path);
     }
   }
-});
+})
+;
 </script>
 
 <template>

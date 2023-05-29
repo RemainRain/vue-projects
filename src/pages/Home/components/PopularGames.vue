@@ -77,7 +77,7 @@ export default defineComponent({
         </div>
         <div class="bottom">
           <div class="type">
-            <img src="../assets/pc.png">
+            <img src="../../../assets/images/pc.png">
             <span>{{ game.type }}</span>
           </div>
           <a class="link" :href="game.link">官网｜礼包</a>
