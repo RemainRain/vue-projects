@@ -1,4 +1,5 @@
 import { createRouter, createWebHashHistory } from 'vue-router';
+
 const routes = [
   {
     path: '/',
@@ -7,7 +8,12 @@ const routes = [
   {
     path: '/game-center',
     component: () => import('@/pages/GameCenter/index.vue')
+  },
+  {
+    path: '/user-center',
+    component: () => import('@/pages/UserCenter/index.vue')
   }
+
 ];
 const router = createRouter({
   history: createWebHashHistory(),
