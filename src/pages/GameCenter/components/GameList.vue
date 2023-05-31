@@ -279,24 +279,5 @@ export default defineComponent({
     }
   }
 
-  .pagination {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    font-size: 16px;
-
-    .item {
-      border-radius: 4px;
-      background: #DBDBDB;
-      margin-right: 11px;
-      padding: 7px 20px;
-      color: #5D5B5A;
-    }
-
-    .active {
-      color: #fff;
-      background: #FF8400;
-    }
-  }
 }
 </style>

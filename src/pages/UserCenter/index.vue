@@ -8,10 +8,11 @@ import inviteIcon from './assets/invite.png';
 import inviteActiveIcon from './assets/invite-active.png';
 import UserInfo from '@/pages/UserCenter/components/UserInfo.vue';
 import MyExchange from '@/pages/UserCenter/components/MyExchange.vue';
+import MyInvitation from '@/pages/UserCenter/components/MyInvitation.vue';
 
 export default defineComponent({
   name: 'index',
-  components: { MyExchange, UserInfo },
+  components: { MyInvitation, MyExchange, UserInfo },
   data () {
     return {
       userInfo: {
@@ -95,6 +96,7 @@ export default defineComponent({
       <div class="right">
         <UserInfo v-if="functionList.index===0"/>
         <MyExchange v-if="functionList.index===1"/>
+        <MyInvitation v-if="functionList.index===2"/>
       </div>
     </div>
   </div>

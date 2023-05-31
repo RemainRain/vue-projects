@@ -32,8 +32,20 @@ export default defineComponent({
           num: 5,
           color: '灰色',
           image: goodsIcon
+        },
+        {
+          name: '肩角衣架家用无痕防滑撑子起包',
+          orderID: '1234567890',
+          time: '5月1日',
+          num: 5,
+          color: '灰色',
+          image: goodsIcon
         }
-      ]
+      ],
+      pagination: {
+        index: 0,
+        list: [1, 2, 3, 4]
+      }
     };
   }
 });
@@ -88,6 +100,18 @@ export default defineComponent({
           </div>
         </div>
       </div>
+    </div>
+    <div class="pagination">
+      <div class="item">共{{ pagination.list.length }}页</div>
+      <div class="item">上一页</div>
+      <div class="item"
+           v-for="(item, index) in pagination.list"
+           :class="[index===pagination.index?'active':'']"
+           :key="index"
+           @click="pagination.index=index">
+        {{ item }}
+      </div>
+      <div class="item">下一页</div>
     </div>
   </div>
 </template>

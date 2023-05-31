@@ -62,6 +62,7 @@ export default defineComponent({
       > div {
         width: 200px;
         text-align: center;
+        padding-bottom: 5px;
       }
 
       .active {
