@@ -1,0 +1,157 @@
+.panel {
+  height: 1023px;
+  //display: flex;
+  margin-top: 24px;
+  margin-bottom: 94px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.31);
+  background: #FFFFFF;
+  padding-top: 65px;
+  padding-left: 233px;
+
+  .step {
+    margin-bottom: 41px;
+
+    .title {
+      span:first-of-type {
+        background: #0CACFF;
+        color: #FFFFFF;
+        width: 22px;
+        height: 22px;
+        display: inline-block;
+        text-align: center;
+        border-radius: 50%;
+        margin-right: 4px;
+      }
+
+      span:last-of-type {
+        color: #636363;
+        font-size: 16px;
+      }
+    }
+
+    .selections {
+      margin-top: 19px;
+      position: relative;
+
+      select {
+        //border-radius: 2px;
+        border: 2px solid #0CACFF;
+        width: 286px;
+        height: 54px;
+        text-align: center;
+        font-size: 16px;
+        color: #0CACFF;
+        margin-right: 9px;
+        appearance: none;
+        position: relative;
+        background: url("./assets/arrow-down.png") no-repeat;
+        background-size: 16px 9px;
+        background-position: 251px center;
+      }
+    }
+
+    .account-info {
+      color: #636363;
+      font-size: 14px;
+      margin-top: 26px;
+
+      span:last-of-type {
+        color: #0CACFF;
+        margin-left: 33px;
+      }
+    }
+  }
+
+  .step {
+    .amount-list {
+      margin-top: 21px;
+      display: flex;
+      flex-wrap: wrap;
+
+      .item {
+        width: 91px;
+        height: 41px;
+        border: 1px solid #949494;
+        margin-right: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #636363;
+        font-size: 16px;
+      }
+
+      .item.active {
+        border-color: #0CACFF;
+        background: url("./assets/icon.png") no-repeat;
+        background-size: 19px 16px;
+        background-position: right bottom;
+      }
+    }
+
+    .custom-amount {
+      margin-top: 19px;
+      color: #636363;
+      font-size: 14px;
+
+      input {
+        border: 1px solid #949494;
+
+        color: #636363;
+        width: 191px;
+        height: 41px;
+        padding-left: 9px;
+        margin-right: 16px;
+      }
+    }
+  }
+
+  .step {
+    .calc {
+      margin-top: 26px;
+      color: #636363;
+
+      span:last-of-type {
+        font-size: 37px;
+        color: #D81E06;
+        margin-left: 6px;
+      }
+    }
+  }
+
+  .step {
+    .pay-ways {
+      margin-top: 15px;
+
+      .way {
+        border: 2px solid #949494;
+        width: 190px;
+        height: 64px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 24px;
+
+        img {
+          height: 43px;
+        }
+      }
+
+      .way.active {
+        border-color: #0CACFF;
+      }
+
+    }
+
+    .recharge-btn {
+      background: #FF8F2F;
+      width: 190px;
+      height: 50px;
+      color: #FFFFFF;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 44px;
+      font-size: 20px;
+    }
+  }
+}

@@ -12,8 +12,11 @@ const routes = [
   {
     path: '/user-center',
     component: () => import('@/pages/UserCenter/index.vue')
+  },
+  {
+    path: '/recharge-center',
+    component: () => import('@/pages/RechargeCenter/index.vue')
   }
-
 ];
 const router = createRouter({
   history: createWebHashHistory(),

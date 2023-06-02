@@ -72,7 +72,7 @@ export default defineComponent({
   position: fixed;
   top: 55%;
   transform: translateY(-50%);
-  right: 10px;
+  right: 0px;
   width: 74px;
   background-color: #fff;
   box-shadow: 0 0 5px 0 #d1d1d1;
